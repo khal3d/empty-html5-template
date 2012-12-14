@@ -1,0 +1,17 @@
+@import "compass";
+@import "_constants";
+/** Reset **/
+@import "compass/reset";
+
+/** Styles **/
+body {
+	color: $black-color;
+	font-family: $body-fonts;
+}
+a {
+	@include link-colors(#0077BA, #0099CC, #0077BA, #0077BA, #0077BA);
+	text-decoration: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: $head-fonts;
+}
