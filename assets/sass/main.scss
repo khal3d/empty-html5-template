@@ -4,9 +4,11 @@
 @import "compass/reset";
 
 /** Styles **/
+@include establish-baseline;
 body {
 	color:  $black-color;
 	font-family:  $body-fonts;
+	font-size: $base-font-size;
 }
 a {
 	@include link-colors(#0077BA, #0099CC, #0077BA, #0077BA, #0077BA);
@@ -17,25 +19,28 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 }
 h1 {
-	font-size: 35pt;
+	@include adjust-font-size-to(35pt);
 }
 
 h2 {
-	font-size: 30pt;
+	@include adjust-font-size-to(30pt);
 }
 
 h3 {
-	font-size: 25pt;
+	@include adjust-font-size-to(25pt);
 }
 
 h4 {
-	font-size: 22pt;
+	@include adjust-font-size-to(22pt);
 }
 
 h5 {
-	font-size: 18pt;
+	@include adjust-font-size-to(18pt);
 }
 
 h6 {
-	font-size: 16pt;
+	@include adjust-font-size-to(16pt);
+}
+.clearfix {
+	@include clearfix;
 }

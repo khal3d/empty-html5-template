@@ -17,7 +17,11 @@ a img { border: none; }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 
 /** Styles **/
-body { color: #141414; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; }
+* html { font-size: 100.0%; }
+
+html { font-size: 12pt; line-height: 1em; }
+
+body { color: #141414; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 12pt; }
 
 a { color: #0077ba; text-decoration: inherit; }
 a:visited { color: #0077ba; }
@@ -27,14 +31,16 @@ a:active { color: #0077ba; }
 
 h1, h2, h3, h4, h5, h6 { font-family: times, "Times New Roman", "times-roman", georgia, serif; font-weight: bold; }
 
-h1 { font-size: 35pt; }
+h1 { font-size: 2.91667em; line-height: 1.37143em; }
 
-h2 { font-size: 30pt; }
+h2 { font-size: 2.5em; line-height: 1.2em; }
 
-h3 { font-size: 25pt; }
+h3 { font-size: 2.08333em; line-height: 1.44em; }
 
-h4 { font-size: 22pt; }
+h4 { font-size: 1.83333em; line-height: 1.63636em; }
 
-h5 { font-size: 18pt; }
+h5 { font-size: 1.5em; line-height: 1.33333em; }
 
-h6 { font-size: 16pt; }
+h6 { font-size: 1.33333em; line-height: 1.5em; }
+
+.clearfix { overflow: hidden; *zoom: 1; }
